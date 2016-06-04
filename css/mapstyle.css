@@ -1,0 +1,68 @@
+html {
+  background: #1a1a1a;
+  color: #e5e5e5;
+  font-family: "Roboto", Helvetica, sans-serif;
+}
+
+
+.description {
+  max-width: 600px;
+  margin: 0 auto;
+  color: rgba(229, 229, 229, 0.7);
+}
+
+a {
+  -webkit-transition: color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #dff3fd;
+}
+a:visited {
+  color: #dff3fd;
+}
+li.active a, a:hover, a:active {
+  color: #e5e5e5;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.centered-y {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.distribution-map {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.distribution-map > img {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.distribution-map .map-point {
+  cursor: pointer;
+  outline: none;
+  z-index: 0;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.85);
+  border: 4px solid #f84d4d;
+}
